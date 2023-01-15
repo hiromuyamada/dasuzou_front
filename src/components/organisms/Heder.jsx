@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { memo } from "react";
+
+const rootName = "dasuzou_front";
+
 export const Heder = memo(() => {
   return (
     <>
@@ -28,7 +31,7 @@ export const Heder = memo(() => {
           </Link>
         </Box>
         <Box display="flex" m={"0px 15px"}>
-          <Link to="../Congestion" style={{ marginRight: "10vw" }}>
+          <Link to={rootName+"/Congestion"} style={{ marginRight: "10vw" }}>
             <Text
               fontSize={{ base: "md", md: "3xl" }}
               textShadow={"0px 0px 2px white"}
@@ -36,7 +39,7 @@ export const Heder = memo(() => {
               混雑状況
             </Text>
           </Link>
-          <Link to="../menu">
+          <Link to={rootName+"/menu"}>
             <Text
               fontSize={{ base: "md", md: "3xl" }}
               textShadow={"0px 0px 2px white"}
